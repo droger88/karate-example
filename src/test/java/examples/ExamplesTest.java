@@ -9,7 +9,6 @@ class ExamplesTest {
 
     @Test
     void testParallel() {
-        System.setProperty("polyglot.js.ecmascript-version", "2020");
         Results results = Runner.path("classpath:examples")
                 //.outputCucumberJson(true)
                 .parallel(5);
